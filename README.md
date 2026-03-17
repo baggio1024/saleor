@@ -18,8 +18,8 @@ docker-compose run --rm api python3 manage.py populatedb
 docker-compose run --rm api python3 manage.py createsuperuser
 
 
-3. 访问地址
-4. 
+2. 访问地址
+
 前台商城：http://localhost:3000
 
 后台管理：http://localhost:8000/dashboard
