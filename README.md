@@ -1,3 +1,22 @@
+# 1. 用Docker快速启动
+git clone https://github.com/saleor/saleor.git
+cd saleor
+# 启动所有服务（数据库、Redis、前端、后端）
+docker-compose up -d
+# 初始化数据库
+docker-compose run --rm api python3 manage.py migrate
+docker-compose run --rm api python3 manage.py populatedb
+# 创建超级管理员
+docker-compose run --rm api python3 manage.py createsuperuser
+
+# 2. 访问地址
+# 前台商城：http://localhost:3000
+# 后台管理：http://localhost:8000/dashboard
+# 用刚创建的管理员账号登录后台，就能开始配置商品了
+
+
+
+
 <div align="center" width="100px">
 
  <picture>
