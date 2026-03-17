@@ -1,82 +1,33 @@
 1. 用Docker快速启动
 git clone https://github.com/saleor/saleor.git
+
 cd saleor
+
 启动所有服务（数据库、Redis、前端、后端）
+
 docker-compose up -d
+
 初始化数据库
+
 docker-compose run --rm api python3 manage.py migrate
+
 docker-compose run --rm api python3 manage.py populatedb
+
 创建超级管理员
+
 docker-compose run --rm api python3 manage.py createsuperuser
 
-2. 访问地址
+
+3. 访问地址
+4. 
 前台商城：http://localhost:3000
+
 后台管理：http://localhost:8000/dashboard
+
 用刚创建的管理员账号登录后台
 
 
 
-
-<div align="center" width="100px">
-
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/76e3079f-696a-4fcd-8658-89739647090b">
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/8477d643-a905-4c63-8ed3-03d0976f6fc3">
-   <img width="200" alt="saleor-commerce-logo" src="https://user-images.githubusercontent.com/4006792/214636328-8e4f83e8-66cb-4114-a3d8-473eb908b9c3.png">
-
- </picture>
-</div>
-
-<div align="center">
-  <strong>Commerce that works with your language and stack</strong>
-</div>
-
-<div align="center">
-  GraphQL native, API-only platform for scalable composable commerce.
-</div>
-
-<br>
-
-<div align="center">
- Get to know Saleor: <br>
-  <a href="https://saleor.io/cloud/talk-to-us?utm_source=github&utm_medium=readme&utm_campaign=repo_saleor">Talk to a human</a>
-  <span> | </span>
-  <a href="https://cloud.saleor.io/signup?utm_source=github&utm_medium=readme&utm_campaign=repo_saleor">Talk to the API</a>
-</div>
-
-<br>
-
-<div align="center">
-  Join our community: <br>
-  <a href="https://saleor.io/">Website</a>
-  <span> | </span>
-  <a href="https://twitter.com/getsaleor">Twitter</a>
-  <span> | </span>
-  <a href="https://saleor.io/discord">Discord</a>
-</div>
-
-<div align="center">
-   <a href="https://saleor.io/blog">Blog</a>
-  <span> | </span>
-  <a href="https://saleor.typeform.com/to/JTJK0Nou">Subscribe to newsletter</a>
-</div>
-
-<br>
-
-<div align="center">
-  <a href="https://codecov.io/gh/saleor/saleor" >
-    <img src="https://codecov.io/gh/saleor/saleor/graph/badge.svg?token=qkNcTJ4TmI" alt="Coverage"/>
-  </a>
-  <a href="https://docs.saleor.io/">
-    <img src="https://img.shields.io/badge/docs-docs.saleor.io-brightgreen.svg" alt="Documentation" />
-  </a>
-  <a href="https://github.com/astral-sh/ruff">
-    <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json" alt="Linted by Ruff">
-  </a>
- <a href="https://saleor.io/discord">
-   <img src="https://img.shields.io/discord/864066819866624010"  alt="Discord" >
- </a>
-</div>
 
 ## Table of Contents
 
